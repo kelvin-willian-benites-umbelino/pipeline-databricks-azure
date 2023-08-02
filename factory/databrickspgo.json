@@ -1,0 +1,9 @@
+{
+	"name": "databrickspgo",
+	"location": "eastus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "7d8f3fd3-331b-40e1-85fd-7b9beb9446cb",
+		"tenantId": "9d5c257a-5150-48a7-93db-2165e4612b5d"
+	}
+}
