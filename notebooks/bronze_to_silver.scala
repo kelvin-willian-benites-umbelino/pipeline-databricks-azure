@@ -13,5 +13,5 @@ display(df_silver)
 
 // COMMAND ----------
 
-val path = "dbfs:/mnt/dados/silver/dataset_imoveis"
+val path = "dbfs:/mnt/dados/silver/dataset"
 df_silver.write.format("delta").mode("overwrite").save(path)
