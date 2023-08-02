@@ -21,6 +21,6 @@ val df_bronze = dados_anuncio.withColumn("id", col("anuncio.id"))
 
 // COMMAND ----------
 
-val path = "dbfs:/mnt/dados/bronze/dataset_imoveis"
+val path = "dbfs:/mnt/dados/bronze/dataset"
 df_bronze.write.format("delta").mode(SaveMode.Overwrite).save(path)
 
