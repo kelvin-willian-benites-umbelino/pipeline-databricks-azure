@@ -69,5 +69,6 @@
 
 // COMMAND ----------
 
-val path = "dbfs:/mnt/dados/bronze/service_now"
-df.write.format("delta").mode(SaveMode.Overwrite).save(path)
+// MAGIC %python
+// MAGIC path = "dbfs:/mnt/dados/bronze/dataset_sn"
+// MAGIC df.write.format("delta").mode("overwrite").option("overwriteSchema", "true").save(path)
