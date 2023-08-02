@@ -1,4 +1,9 @@
 // Databricks notebook source
+// MAGIC %md
+// MAGIC <b>Importando bibliotecas</b>
+
+// COMMAND ----------
+
 // MAGIC %python
 // MAGIC from datetime import date, timedelta
 // MAGIC from pyspark.sql import SparkSession
@@ -9,6 +14,11 @@
 // MAGIC
 // MAGIC # Inicialize a sessão do Spark
 // MAGIC spark = SparkSession.builder.appName("Exemplo_PySpark").getOrCreate()
+
+// COMMAND ----------
+
+// MAGIC %md
+// MAGIC <b>Definindo variaveis</b>
 
 // COMMAND ----------
 
@@ -35,6 +45,11 @@
 
 // COMMAND ----------
 
+// MAGIC %md
+// MAGIC <b>Chamando a API</b>
+
+// COMMAND ----------
+
 // MAGIC %python
 // MAGIC # Chame a API usando o módulo requests para obter os dados
 // MAGIC import requests
@@ -46,9 +61,11 @@
 // MAGIC from pyspark.sql import Row
 // MAGIC data_rows = [Row(**item) for item in data["result"]]
 // MAGIC df = spark.createDataFrame(data_rows)
-// MAGIC
-// MAGIC # Exiba o DataFrame
-// MAGIC df.show()
+
+// COMMAND ----------
+
+// MAGIC %md
+// MAGIC <b>Salvando dados no DataLake</b>
 
 // COMMAND ----------
 
